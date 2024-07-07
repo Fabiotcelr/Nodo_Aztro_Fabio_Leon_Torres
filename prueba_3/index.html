@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/prueba_3/styles.css">
+    <title>Formulario | nodo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="">
+                    <img src="/prueba_3/img/logoNdoprincipal.svg" alt="Logo">
+                </a>
+            </div>
+            <div>
+                <ul>
+                    <li>Contactanos</li>
+                    <li>
+                        <a href="https://github.com/Fabiotcelr">
+                            <img src="/prueba_3/img/pinned-octocat-093da3e6fa40.svg" alt="icon.guitHub">
+                        </a>    
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="get">
+            <fieldset>
+                <div class="field-input">
+                    <label for="useName">Nombre</label>
+                    <input type="text" name="useName" id="useName" placeholder="Nombre" required>
+                </div>
+                <div class="field-input">
+                    <label for="lastName">Apellido</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Apellido" required>
+                </div>
+                <div class="field-input">
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" id="email" placeholder="Correo" required>
+                </div>
+                <div class="field-input">
+                    <label for="address">Dirección</label>
+                    <input type="text" name="address" id="address" placeholder="Dirección">
+                </div>
+                <div class="field-input">
+                    <label for="country">País</label>
+                    <select name="country" id="country" required>
+                        <option value="colombia">Colombia</option>
+                    </select>
+                </div>
+                <div class="field-input">
+                    <label for="state">Departamento</label>
+                    <select name="state" id="state">
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Antioquia">Antioquia</option>
+                        <option value="Arauca">Arauca</option>
+                        <option value="Atlántico">Atlántico</option>
+                        <option value="Bolívar">Bolívar</option>
+                        <option value="Boyacá">Boyacá</option>
+                        <option value="Caldas">Caldas</option>
+                        <option value="Caquetá">Caquetá</option>
+                        <option value="Casanare">Casanare</option>
+                        <option value="Cauca">Cauca</option>
+                        <option value="Cesar">Cesar</option>
+                        <option value="Chocó">Chocó</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Cundinamarca">Cundinamarca</option>
+                        <option value="Guainía">Guainía</option>
+                        <option value="Guaviare">Guaviare</option>
+                        <option value="Huila">Huila</option>
+                        <option value="La Guajira">La Guajira</option>
+                        <option value="Magdalena">Magdalena</option>
+                        <option value="Meta">Meta</option>
+                        <option value="Nariño">Nariño</option>
+                        <option value="Norte de Santander">Norte de Santander</option>
+                        <option value="Putumayo">Putumayo</option>
+                        <option value="Quindío">Quindío</option>
+                        <option value="Risaralda">Risaralda</option>
+                        <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                        <option value="Santander">Santander</option>
+                        <option value="Sucre">Sucre</option>
+                        <option value="Tolima">Tolima</option>
+                        <option value="Valle del Cauca">Valle del Cauca</option>
+                        <option value="Vaupés">Vaupés</option>
+                        <option value="Vichada">Vichada</option>
+                    </select>
+                </div>
+                <div class="field-input">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Teléfono" required maxlength="10" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                </div>
+                <div class="field-input">
+                    <label for="categorias">¿A qué carrera deseas inscribirte?</label>
+                    <select name="categorias" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="CloudNative">Cloud Native</option>
+                        <option value="Frontend">Frontend</option>
+                        <option value="Backend">Backend</option>
+                        <option value="Fundamentals">Fundamentals</option>
+                        <option value="Python">Python</option>
+                        <option value="MarketingDigital">Marketing Digital</option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="conten-description">
+                <div class="field-input">
+                    <label for="description">Descripción personal</label>
+                    <textarea name="description" id="description" placeholder="Mi nombre es ..."></textarea>
+                </div>
+            </div>
+            <fieldset class="ocpcions-t-m">
+                <div class="field-input">
+                    <label for="modalidad">Modalidad</label>
+                    <div>
+                        <input type="radio" value="presencial" name="tipoDeModalidad" required>
+                        <label for="presencial">Presencial</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="virtual" name="tipoDeModalidad" required>
+                        <label for="virtual">Virtual</label>
+                    </div>
+                </div>
+                <div class="field-input">
+                    <label for="trabajando">¿Estás trabajando?</label>
+                    <div>
+                        <input type="radio" value="Sí" name="userTrabajando">
+                        <label for="Sí">Sí</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="No" name="userTrabajando">
+                        <label for="No">No</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="btn-container">
+                <button class="btn-submit" type="submit">Registrarse</button>
+                <button class="btn-reset" type="reset">Restablecer</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
