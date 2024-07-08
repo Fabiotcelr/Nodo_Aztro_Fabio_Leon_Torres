@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz Dinámica con Botones</title>
+    <link rel="stylesheet" href="/prueba_5/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="">TCLR-Calculator</a>
+            </div>
+            <div class="buttons">
+                <button onclick="showContent('section1')">Rectangle</button>
+                <button onclick="showContent('section2')">Circle</button>
+                <a href="https://github.com/Fabiotcelr" target="_blank" class="button-link">
+                    <button class="button">
+                        <i class="fa-brands fa-github"></i>
+                    </button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            
+            <div class="contents">
+                <div id="section1" class="content">
+                    <h2>Rectangle</h2>
+                    <div class="calculatorm-amin">
+                        <section class="calulator-blok">
+                            <div class="calulator-blok-conten">
+                                <div class="calculator-figure">
+                                    <img src="./img/rectangulo.png" alt="Rectangle">
+                                    <form class="figure-values">
+                                        <div class="content-form">
+                                            
+                                            <p class="value">
+                                                <label for="">base in centimeters</label>
+                                                <input type="number"  id="n1">
+                                            </p>
+                                            <p class="value" >
+                                                <label for="">height  in centimeters</label>
+                                                <input type="number"  id="n2">
+                                            </p>
+                                        </div>    
+                                        <div>  
+                                            <h3>Results</h3>
+                                            <p class="value">
+                                                <input type="number" id="area-calculate" name="phone" placeholder="area result">
+                                            </p>
+                                            <p class="value">
+                                                <input type="number" id="perimeter-calculate" name="phone" placeholder="perimeter result">
+                                            </p>
+                                            <p class="value">
+                                                <input type="number" id="diagonal-calculate" name="phone" placeholder="diagonal result">
+                                            </p>
+                                        </div>
+                                        <div class="form-submit">
+                                            <input class="calculate-button" type="button" value="calculate" onclick="sumar()">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div id="section2" class="content">
+                    <h2>Circle</h2>
+                    <div class="calculatorm-amin">
+                        <section class="calulator-blok">
+                            <div class="calulator-blok-conten">
+                                <div class="calculator-figure">
+                                    <img src="./img/circle-calc-fixed.svg" alt="circle">
+                                    <form class="figure-values">
+                                        <div class="content-form">
+                                            
+                                            <p class="value">
+                                                <label for="">Radius in centimeters</label>
+                                                <input type="number"  id="nC1">
+                                            </p>
+                                        </div>    
+                                        <div>  
+                                            <h3>Results</h3>
+                                            <p class="value">
+                                                <input type="number" id="area-circle" name="phone" placeholder="area result">
+                                            </p>
+                                            <p class="value">
+                                                <input type="number" id="circumference-circle" name="phone" placeholder="circumference result">
+                                            </p>
+                                            <p class="value">
+                                                <input type="number" id="diameter-circle" name="phone" placeholder="diameter result">
+                                            </p>
+                                        </div>
+                                        <div class="form-submit">
+                                            <input class="calculate-button" type="button" value="calculater" onclick="caCircle()">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/prueba_5/logica/script.js"></script>
+    <script src="/prueba_5/logica/geometric-calc.js"></script>
+</body>
+</html>
