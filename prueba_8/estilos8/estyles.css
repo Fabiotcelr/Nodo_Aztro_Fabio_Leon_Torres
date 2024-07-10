@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    width: 100%;
+    background: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+}
+
+.item1, .item2, .item3{
+    width: 250px;
+    height: 250px;
+}
+.item1{
+    background: aqua;
+}
+
+.item2{
+    background: rgb(0, 255, 106);
+}
+
+.item3{
+    background: blueviolet;
+}
