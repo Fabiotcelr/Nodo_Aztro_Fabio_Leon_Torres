@@ -10,7 +10,9 @@
     <header>
         <nav>
             <div>
-
+                <a href="">
+                    <img src="" alt="">
+                </a>
             </div>
              <div>
                 <ul>
@@ -24,11 +26,56 @@
         </nav>
     </header>
     <main>
+        <div class="conatiner">
+            <section class="container-promedio">
+                <div class="title-container">
+                    <h2 class="interface-title">Calcaladora proemdios de teimpo</h2>
+                    <div class="interface-container">
+                        <p>Ingresa los tiempos de tus cinco pruebas (en segundos):</p>
+                        <form id="tiemposForm" onsubmit="calcularPromedio(event)">
+                            <input type="number" id="tiempo1" placeholder="Tiempo de la prueba 1" required>
+                            <input type="number" id="tiempo2" placeholder="Tiempo de la prueba 2" required>
+                            <input type="number" id="tiempo3" placeholder="Tiempo de la prueba 3" required>
+                            <input type="number" id="tiempo4" placeholder="Tiempo de la prueba 4" required>
+                            <input type="number" id="tiempo5" placeholder="Tiempo de la prueba 5" required>
+                            <button type="submit">Calcular Promedio</button>
+                        </form>
+                        <div class="result" id="resultado"></div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="title-container">
+                    <h2 class="interface-title"></h2>
+                    <div class="interface-container"></div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="title-container">
+                    <h2 class="interface-title"></h2>
+                    <div class="interface-container"></div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="title-container">
+                    <h2 class="interface-title"></h2>
+                    <div class="interface-container"></div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="title-container">
+                    <h2 class="interface-title"></h2>
+                    <div class="interface-container"></div>
+                </div>
+            </section>
 
+        </div>
     </main>
     <footer>
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+    <script src="./logica7/promedio.js"></script>
 </body>
 </html>
