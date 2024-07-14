@@ -29,7 +29,7 @@
         <div class="conatiner">
             <section class="container-promedio">
                 <div class="title-container">
-                    <h2 class="interface-title">Calcaladora proemdios de teimpo</h2>
+                    <h2 class="interface-title">Calculadora proemdios de tiempo</h2>
                     <div class="interface-container">
                         <p>Ingresa los tiempos de tus cinco pruebas (en segundos):</p>
                         <form id="tiemposForm" onsubmit="calcularPromedio(event)">
@@ -42,21 +42,59 @@
                         </form>
                         <div class="result" id="resultado"></div>
                     </div>
+                </div>
+            </section>
+            <section class="container-trapezoidal">
+                <div class="title-container">
+                    <h2 class="interface-title">Calculadora trapezoidal</h2>
+                    <div class="interface-container">
+                        <p>Ingresa las medidas que tengas en tus planos:</p>
+                        <form id="litroForm" onsubmit="calcularArea(event)">
+                            <input type="number" name="altura" id="altura" placeholder="Altura en m" required>
+                            <input type="number" name="base1" id="base1" placeholder="Base 1 perpendicular en m" required>
+                            <input type="number" name="base2" id="base2" placeholder="Base 2 perpendicular en m" required>
+                            <input type="number" name="lado1" id="lado1" placeholder="Lado 1 perpendicular en m" required>
+                            <input type="number" name="lado2" id="lado2" placeholder="Lado 2 perpendicular en m" required>
+                            <button type="submit">Calcular L x m2</button>
+                        </form>
+                        <div class="result" id="area"></div>
+                        <div class="result" id="litrosPorMetro"></div>
+                        <div class="result" id="perimetro"></div>
                     </div>
                 </div>
             </section>
             <section class="container">
                 <div class="title-container">
-                    <h2 class="interface-title"></h2>
-                    <div class="interface-container"></div>
+                    <h2 class="interface-title">Ladrillos en la pared</h2>
+                    <div class="interface-container">
+                        <p>Ingresa los datos solicitados para calcular cuántos ladrillos necesitas</p>
+                        
+                        <form id="formLadrillo" onsubmit="calLadrillos(event)">
+                            <fieldset>   
+                                <p>Dimensiones de la Pared</p> 
+                                <input type="text" id="altPared" placeholder="Altura de la pared en m" required>
+                                <input type="text" id="ancPared" placeholder="Ancho de la pared en m" required>
+                            </fieldset>
+                            <fieldset>
+                                <p>Dimensiones del Ladrillo</p>
+                                <input type="text" id="altLadrillo" placeholder="Altura del ladrillo en m" required>
+                                <input type="text" id="ancLadrillo" placeholder="Ancho del ladrillo en m" required>
+                                <p>Espesor del Mortero</p>
+                                <input type="text" name="espesor" id="espesor" placeholder="Espesor del mortero en m" required>
+                                <p>% Desperdicio (opcional)</p>
+                                <input type="text" name="desperdicio" id="desperdicio" placeholder="% de Desperdicio">
+                                <br>
+                                <br>
+                                <button type="submit">Calcular Ladrillos</button>
+                            </fieldset>    
+                        </form>
+                        <div class="result" id="areaPared"></div>
+                        <div class="result" id="ladrillos"></div>
+                        <div class="result" id="desLadrillos"></div>
+                    </div>
                 </div>
             </section>
-            <section class="container">
-                <div class="title-container">
-                    <h2 class="interface-title"></h2>
-                    <div class="interface-container"></div>
-                </div>
-            </section>
+            
             <section class="container">
                 <div class="title-container">
                     <h2 class="interface-title"></h2>
@@ -77,5 +115,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
     <script src="./logica7/promedio.js"></script>
+    <script src="./logica7/trapezoidal.js"></script>
+    <script src="./logica7/calContenedor.js"></script>
 </body>
 </html>
