@@ -3,6 +3,19 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+
+
+nav .tiltePrincipal a {
+    text-decoration: none;
+}
 .container {
     max-width: 600px;
     margin: 20px auto;

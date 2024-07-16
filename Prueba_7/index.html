@@ -11,9 +11,9 @@
 <body>
     <header>
         <nav class="text-bg-warning p-3">
-            <div>
+            <div class="tiltePrincipal">
                 <a href="">
-                    </H1>   <img src="" alt="">
+                    <h1 class="text-dark">TCLR</h1>   <img src="" alt="">
                 </a>
             </div>
             <div>
@@ -235,9 +235,54 @@
             </section>
             
             <section id="conten5" class="content">
-                <div class="title-container">
-                    <h2 class="interface-title"></h2>
-                    <div class="interface-container"></div>
+                <div class="container">
+                    <h2 class="interface-title">Calculadora Liquidacion</h2>
+                    <div class="interface-container">
+                        <p>Ingresa los dartos solicitados para calcaular las liquidaciones:</p>
+                        <form id="liquidacion" onsubmit="calcularLiquidacion(event)">
+                            <div class="mb-3">
+                                <label for="nombre">Empleado</label>
+                                <input type="text" class="form-control" id="nombreEmp" placeholder="Nombre de empleado" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="dia">Dias del mes</label>
+                                <input type="number" class="form-control" id="dias" placeholder="Dias tarabajados" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="horasExDi">Extras diurnas</label>
+                                <input type="number" class="form-control" id="horasExDi" placeholder="Horas extras diurnas" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="horasExNo">Extras nocturnas</label>
+                                <input type="number" class="form-control" id="horasExNo" placeholder="Horas extras nocturnas" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="festivos">Día festivos</label>
+                                <input type="number" class="form-control" id="festivos" placeholder="Horas día festivos" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Calcular pago</button>
+                        </form>
+                        <div class="result mt-3" id="resultadoLi"></div>
+                        <!-- <div class="result mt-3" id="resultadoSa"></div>
+                        <div class="result mt-3" id="resultadoPe"></div>
+                        <div class="result mt-3" id="resultadoAl"></div> -->
+                        <br>
+                        <br>
+                        <table class="table mt-3" id="resultadosTabla">
+                            <thead>
+                                <tr>
+                                    <th>Empleado</th>
+                                    <th>Días Trabajados</th>
+                                    <th>Extras Diurnas</th>
+                                    <th>Extras Nocturnas</th>
+                                    <th>Festivos</th>
+                                    <th>Salario Neto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
         </div>
@@ -251,5 +296,6 @@
     <script src="./logica7/calContenedor.js"></script>
     <script src="./logica7/script.js"></script>
     <script src="./logica7/imc.js"></script>
+    <script src="./logica7/liquidacion.js"></script>
 </body>
 </html>
