@@ -19,7 +19,7 @@
             "title": "Formularios",
             "description": "Generar dentro del nuevo repositorio, un fichero llamado introduction.md donde en formato MarkDown se presenten Nombre, breve introducción de quien eres y contacto institucional.",
             "date": "6 de junio",
-            "url":""
+            "url":"https://fabiotcelr.github.io/Nodo_Aztro_Fabio_Leon_Torres/prueba_3/"
         },
         {
             "icon":"fa-solid fa-briefcase",
@@ -33,28 +33,28 @@
             "title": "Footer usando libreria de iconos",
             "description": "Realiza la Maquetación (HTML + CSS) necesaria para recrear la vista que se planteó ademas de usar FontAwesome como fuente de iconos.",
             "date": "3 de Julio",
-            "url":""
+            "url":"https://fabiotcelr.github.io/Nodo_Aztro_Fabio_Leon_Torres/prueba_4/"
         },
         {
             "icon":"fa-solid fa-right-to-bracket",
             "title": "Logica secuencial",
             "description": "Crea una interfaz a partir del modelo guía donde ingresando datos soluciones formulas arifmetica integra menú de navegación  y con diseño libre.",
             "date": "6 de julio",
-            "url":""
+            "url":"https://fabiotcelr.github.io/Nodo_Aztro_Fabio_Leon_Torres/prueba_5/"
         },
         {
             "icon":"fa-solid fa-grip",
             "title": "Galeria Grid",
             "description": "Crea una galería de imágenes aplicando display: Grid teniendo como base la distribución que se observa en la imagen.",
             "date": "10 de julio",
-            "url":""
+            "url":"https://fabiotcelr.github.io/Nodo_Aztro_Fabio_Leon_Torres/prueba_6/"
         },
         {
             "icon":"fa-solid fa-boxes-stacked",
             "title": "Logica secuencial y condicional",
             "description": "Utiliza formularios HTML y JavaScript para dar solución a las diferentes situaciones  plateadas. recuerda que debes desarrollar la interfaz agregando CSS del punto 3.",
             "date": "14 de julio",
-            "url":""
+            "url":"https://fabiotcelr.github.io/Nodo_Aztro_Fabio_Leon_Torres/Prueba_7/"
         }
     ]
 }
