@@ -5,7 +5,7 @@ function calcularLiquidacion(event) {
     let horasExDi = parseFloat(document.getElementById('horasExDi').value);
     let horasExNo = parseFloat(document.getElementById('horasExNo').value);
     let festivos = parseFloat(document.getElementById('festivos').value);
-    let nombreEmp = document.getElementById('nombreEmp').value; // No parseFloat
+    let nombreEmp = document.getElementById('nombreEmp').value; 
 
     if (isNaN(dias)){
         alert('Por favor valida bien el número de días ingresado');
